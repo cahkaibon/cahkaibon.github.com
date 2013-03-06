@@ -2,10 +2,10 @@
 project_type = :stand_alone
 
 # Publishing paths
-http_path = "/cahkaibon/"
-http_images_path = "/cahkaibon/images"
-http_fonts_path = "/cahkaibon/fonts"
-css_dir = "public/cahkaibon/stylesheets"
+http_path = "/"
+http_images_path = "/images"
+http_fonts_path = "/fonts"
+css_dir = "public/stylesheets"
 
 # Local development paths
 sass_dir = "sass"
