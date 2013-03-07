@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Andhi Personal Website]]></title>
   <link href="http://cahkaibon.github.com/atom.xml" rel="self"/>
   <link href="http://cahkaibon.github.com/"/>
-  <updated>2013-03-06T22:48:17+07:00</updated>
+  <updated>2013-03-07T11:52:11+07:00</updated>
   <id>http://cahkaibon.github.com/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Andhi Noerdianto]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[hello world]]></title>
-    <link href="http://cahkaibon.github.com/blog/2013/03/06/hello-world/"/>
+    <link href="http://cahkaibon.github.com/hello-world/"/>
     <updated>2013-03-06T22:29:00+07:00</updated>
-    <id>http://cahkaibon.github.com/blog/2013/03/06/hello-world</id>
+    <id>http://cahkaibon.github.com/hello-world</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
