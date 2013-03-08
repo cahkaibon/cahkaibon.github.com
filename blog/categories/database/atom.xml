@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: database | Andhi Noerdianto Personal Website]]></title>
+  <link href="http://cahkaibon.github.com/blog/categories/database/atom.xml" rel="self"/>
+  <link href="http://cahkaibon.github.com/"/>
+  <updated>2013-03-09T00:57:12+07:00</updated>
+  <id>http://cahkaibon.github.com/</id>
+  <author>
+    <name><![CDATA[Andhi Noerdianto]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[hello world]]></title>
+    <link href="http://cahkaibon.github.com/hello-world/"/>
+    <updated>2013-03-06T22:29:00+07:00</updated>
+    <id>http://cahkaibon.github.com/hello-world</id>
+    <content type="html"><![CDATA[<p><strong>Kenalan dulu sama <code>octopress</code> dan markdown</strong></p>
+
+<p>test lagi <br /> ini ganti baris</p>
+
+<blockquote><p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p></blockquote>
+
+<!-- more -->
+
+
+<p><code>
+$ sudo make me a sandwich
+$ sudo make me a sandwich
+$ sudo make me a sandwich
+</code>
+``` php Testing Caption Code Snippet
+if($var === 1){</p>
+
+<pre><code>echo "TRUE";
+</code></pre>
+
+<p>}else{</p>
+
+<pre><code>echo "FALSE";
+</code></pre>
+
+<p>}
+```</p>
+
+<p>Kalau yg ini list order:</p>
+
+<ul>
+<li>satu</li>
+<li>dua</li>
+<li>tiga</li>
+</ul>
+
+
+<p>test</p>
+
+<ol>
+<li>siji</li>
+<li>loro</li>
+<li>telu</li>
+</ol>
+
+]]></content>
+  </entry>
+  
+</feed>

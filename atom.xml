@@ -4,7 +4,7 @@
   <title><![CDATA[Andhi Noerdianto Personal Website]]></title>
   <link href="http://cahkaibon.github.com/atom.xml" rel="self"/>
   <link href="http://cahkaibon.github.com/"/>
-  <updated>2013-03-08T18:41:33+07:00</updated>
+  <updated>2013-03-09T00:57:12+07:00</updated>
   <id>http://cahkaibon.github.com/</id>
   <author>
     <name><![CDATA[Andhi Noerdianto]]></name>
@@ -18,7 +18,57 @@
     <link href="http://cahkaibon.github.com/hello-world/"/>
     <updated>2013-03-06T22:29:00+07:00</updated>
     <id>http://cahkaibon.github.com/hello-world</id>
-    <content type="html"><![CDATA[
+    <content type="html"><![CDATA[<p><strong>Kenalan dulu sama <code>octopress</code> dan markdown</strong></p>
+
+<p>test lagi <br /> ini ganti baris</p>
+
+<blockquote><p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p></blockquote>
+
+<!-- more -->
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo make me a sandwich
+</span><span class='line'>$ sudo make me a sandwich
+</span><span class='line'>$ sudo make me a sandwich</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><figcaption><span>Testing Caption Code Snippet</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">if($var === 1){</span>
+</span><span class='line'><span class="x">  echo &quot;TRUE&quot;;</span>
+</span><span class='line'><span class="x">}else{</span>
+</span><span class='line'><span class="x">  echo &quot;FALSE&quot;;</span>
+</span><span class='line'><span class="x">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Kalau yg ini list order:</p>
+
+<ul>
+<li>satu</li>
+<li>dua</li>
+<li>tiga</li>
+</ul>
+
+
+<p>test</p>
+
+<ol>
+<li>siji</li>
+<li>loro</li>
+<li>telu</li>
+</ol>
+
 ]]></content>
   </entry>
   
