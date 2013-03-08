@@ -5,4 +5,9 @@
 {% else %}
   {% assign author = site.author %}
 {% endif %}
-{% if author %}<span class="byline author vcard">Posted by <span class="fn">{{ author }}</span></span>{% endif %}
+{% if author %}<span class="byline author vcard">Posted by <a href="https://plus.google.com/{{ site.googleplus_user }}?rel=author">{{ author }}</a></span>{% endif %} •  {% if page.tags %}Tags: 
+{% for t in page.tags %}
+	<a href="/tags/{{ t }}">{{ t }}</a>
+	{% if forloop.last %}
+	{% else %},{% endif %}
+{% endfor %}{% endif %}
