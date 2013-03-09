@@ -1,8 +1,13 @@
 <div class="profilepic">	
-	<a href="{{ root_url }}/"><img src="{{ root_url }}/images/logo-cahkaibon-com.png" alt="Profile Picture" width="98%"/></a>
+	<a href="{{ root_url }}/"><img src="{{ root_url }}/images/logo-cahkaibon-com.png" alt="Andhi Noerdianto cahkaibon.com" width="98%"/></a>
 </div>
+<!--
 <h1><a href="{{ root_url }}/">Andhi Noerdianto</a></h1>
-<p class="subtitle">{{ site.subtitle }}</p>
+<p class="subtitle">{{ site.subtitle }}</p>-->
+<form method="get" action="{{ site.simple_search }}">
+    <input type="hidden" value="site:{{ root_url }}" name="q">
+    <input type="text" placeholder="Search" results="0" name="q" class="search">
+</form>
 <nav id="main-nav">{% include navigation.html %}</nav>
 <nav id="sub-nav">
 	<div class="social">
