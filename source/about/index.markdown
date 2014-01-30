@@ -1,0 +1,14 @@
+---
+layout: page
+title: "About Me"
+date: 2014-01-30 11:14
+comments: true
+sharing: true
+footer: true
+---
+hi, my name andhi noerdianto, this is my [profile](http://id.linkedin.com/in/andhinoerdianto/), i'm from kaibon on of the villages in madiun, indonesia. yeah of course, this website domain takes from my village. And 'cah' words mean 'bocah' (child) because i'm a little man :D
+
+>{this-blog : my-notes}
+
+Salam<br/>
+Cahkaibon
