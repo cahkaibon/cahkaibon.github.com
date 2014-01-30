@@ -18,7 +18,10 @@ $ vi source/_post/yyyy-mm-dd-sample.markdown
 $ rake generate
 $ rake watch
 $ rake preview
-$ git push origin master
+$ rake deploy <--- deploy ke github
+$ git add .
+$ git commit -m 'your message' .
+$ git push origin source
 ```
 
 Salam<br />cahkaibon
