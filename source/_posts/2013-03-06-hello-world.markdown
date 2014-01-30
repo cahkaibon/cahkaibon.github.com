@@ -43,3 +43,8 @@ test
 2. loro
 3. telu
 
+{% codeblock Javascript Array Syntax lang:js http://j.mp/pPUUmW MDN Documentation %}
+var arr1 = new Array(arrayLength);
+var arr2 = new Array(element0, element1, ..., elementN);
+{% endcodeblock %}
+
