@@ -8,7 +8,7 @@ keywords: octopress
 tags: [octopress]
 author: Andhi Noerdianto
 ---
-**cara ngeblognya**
+**How To 'ngeblog'**
 ```
 $ su blog
 $ cd /home/blog/octopress/
