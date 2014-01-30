@@ -4,7 +4,7 @@
   <title><![CDATA[Andhi Noerdianto Personal Website]]></title>
   <link href="http://cahkaibon.github.com/atom.xml" rel="self"/>
   <link href="http://cahkaibon.github.com/"/>
-  <updated>2014-01-30T10:19:38+07:00</updated>
+  <updated>2014-01-30T10:35:22+07:00</updated>
   <id>http://cahkaibon.github.com/</id>
   <author>
     <name><![CDATA[Andhi Noerdianto]]></name>
@@ -29,6 +29,9 @@
 <span class='line-number'>7</span>
 <span class='line-number'>8</span>
 <span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>$ su blog
 </span><span class='line'>$ cd /home/blog/octopress/
 </span><span class='line'>$ /bin/bash --login
@@ -37,7 +40,10 @@
 </span><span class='line'>$ rake generate
 </span><span class='line'>$ rake watch
 </span><span class='line'>$ rake preview
-</span><span class='line'>$ git push origin master</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>$ rake deploy &lt;--- deploy ke github
+</span><span class='line'>$ git add .
+</span><span class='line'>$ git commit -m 'your message' .
+</span><span class='line'>$ git push origin source</span></code></pre></td></tr></table></div></figure>
 
 
 <p>Salam<br />cahkaibon</p>

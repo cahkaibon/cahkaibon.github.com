@@ -4,7 +4,7 @@
   <title><![CDATA[Category: other | Andhi Noerdianto Personal Website]]></title>
   <link href="http://cahkaibon.github.com/blog/categories/other/atom.xml" rel="self"/>
   <link href="http://cahkaibon.github.com/"/>
-  <updated>2014-01-30T10:19:38+07:00</updated>
+  <updated>2014-01-30T10:35:22+07:00</updated>
   <id>http://cahkaibon.github.com/</id>
   <author>
     <name><![CDATA[Andhi Noerdianto]]></name>
@@ -28,7 +28,10 @@ $ vi source/_post/yyyy-mm-dd-sample.markdown
 $ rake generate
 $ rake watch
 $ rake preview
-$ git push origin master
+$ rake deploy &lt;--- deploy ke github
+$ git add .
+$ git commit -m 'your message' .
+$ git push origin source
 </code></p>
 
 <p>Salam<br />cahkaibon</p>
