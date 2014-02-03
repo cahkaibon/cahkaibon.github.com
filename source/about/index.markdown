@@ -10,5 +10,5 @@ hi, my name andhi noerdianto, this is my [profile](http://id.linkedin.com/in/and
 
 >{this-blog : my-notes}
 
-Salam<br/>
-Cahkaibon
+Regards<br/>
+{cahkaibon}

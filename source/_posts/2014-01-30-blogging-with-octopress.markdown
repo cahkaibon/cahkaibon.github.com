@@ -28,4 +28,5 @@ $ git push origin source
 Only for my machine.
 
 
-Salam<br />cahkaibon
+Regards<br />
+{cahkaibon}

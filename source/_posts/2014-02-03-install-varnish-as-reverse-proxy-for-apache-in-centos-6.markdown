@@ -54,3 +54,6 @@ $ service httpd restart
 $ service varnish start
 $ chkconfig varnish on
 ```
+
+Regards<br/>
+{cahkaibon}
