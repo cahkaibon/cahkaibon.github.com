@@ -4,7 +4,7 @@
   <title><![CDATA[Category: linux | Andhi Noerdianto Personal Website]]></title>
   <link href="http://cahkaibon.github.com/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://cahkaibon.github.com/"/>
-  <updated>2014-01-30T12:00:30+07:00</updated>
+  <updated>2014-02-03T10:56:22+07:00</updated>
   <id>http://cahkaibon.github.com/</id>
   <author>
     <name><![CDATA[Andhi Noerdianto]]></name>
@@ -12,6 +12,72 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[install varnish as a reverse proxy for apache in centos 6]]></title>
+    <link href="http://cahkaibon.github.com/install-varnish-as-reverse-proxy-for-apache-in-centos-6/"/>
+    <updated>2014-02-03T10:43:00+07:00</updated>
+    <id>http://cahkaibon.github.com/install-varnish-as-reverse-proxy-for-apache-in-centos-6</id>
+    <content type="html"><![CDATA[<p><code>
+$ su -
+$ rpm --nosignature -i http://repo.varnish-cache.org/redhat/varnish-3.0/el6/noarch/varnish-release/varnish-release-3.0-1.el6.noarch.rpm
+$ yum -y install varnish
+</code></p>
+
+<p>case:<br/></p>
+
+<ul>
+<li>varnish in port 80</li>
+<li>apache in port 8080</li>
+</ul>
+
+
+<p>```
+$ vi /etc/varnish/default.vcl
+change:</p>
+
+<pre><code>backend default {
+    .host = "127.0.0.1";
+    .port = "80";
+}
+</code></pre>
+
+<p>to:</p>
+
+<pre><code>backend default {
+            .host = "127.0.0.1";
+            .port = "8080";
+    }
+</code></pre>
+
+<p>$ vi /etc/sysconfig/varnish
+change:</p>
+
+<pre><code>VARNISH_LISTEN_PORT=6081
+</code></pre>
+
+<p>to:</p>
+
+<pre><code>VARNISH_LISTEN_PORT=80
+</code></pre>
+
+<p>$ vi /etc/httpd/conf/httpd.conf
+change:</p>
+
+<pre><code>LISTEN 80
+</code></pre>
+
+<p>to:</p>
+
+<pre><code>LISTEN 8080
+</code></pre>
+
+<p>$ service httpd restart
+$ service varnish start
+$ chkconfig varnish on
+```</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[hello world]]></title>
