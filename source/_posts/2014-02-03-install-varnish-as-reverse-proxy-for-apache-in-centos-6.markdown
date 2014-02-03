@@ -19,7 +19,7 @@ $ su -
 $ rpm --nosignature -i http://repo.varnish-cache.org/redhat/varnish-3.0/el6/noarch/varnish-release/varnish-release-3.0-1.el6.noarch.rpm
 $ yum -y install varnish
 ```
-
+<!-- more -->
 case:<br/>
 
 - varnish in port 80
