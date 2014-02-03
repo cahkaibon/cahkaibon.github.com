@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "function helper: get column excel with php"
+title: "function helper: get column excel with PHP"
 date: 2014-02-03 13:59
 comments: true
 categories: [programming]
