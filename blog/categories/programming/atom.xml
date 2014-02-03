@@ -4,7 +4,7 @@
   <title><![CDATA[Category: programming | Andhi Noerdianto Personal Website]]></title>
   <link href="http://cahkaibon.github.com/blog/categories/programming/atom.xml" rel="self"/>
   <link href="http://cahkaibon.github.com/"/>
-  <updated>2014-02-03T14:10:54+07:00</updated>
+  <updated>2014-02-03T14:20:26+07:00</updated>
   <id>http://cahkaibon.github.com/</id>
   <author>
     <name><![CDATA[Andhi Noerdianto]]></name>
@@ -50,6 +50,9 @@ return $c;
 <p>echo get_column(30);
 ?>
 ```</p>
+
+<p>Regards<br/>
+{cahkaibon}</p>
 ]]></content>
   </entry>
   
@@ -66,6 +69,9 @@ $$str = 'on the fly';
 echo $testing;
 ?&gt;
 </code></p>
+
+<p>Regards<br/>
+{cahkaibon}</p>
 ]]></content>
   </entry>
   
