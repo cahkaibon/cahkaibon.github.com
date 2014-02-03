@@ -16,3 +16,6 @@ $$str = 'on the fly';
 echo $testing;
 ?>
 ```
+
+Regards<br/>
+{cahkaibon}

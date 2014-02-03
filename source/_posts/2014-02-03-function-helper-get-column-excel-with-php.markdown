@@ -36,3 +36,6 @@ function get_column($col)
 echo get_column(30);
 ?>
 ```
+
+Regards<br/>
+{cahkaibon}
