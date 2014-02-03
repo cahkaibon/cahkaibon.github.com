@@ -4,7 +4,7 @@
   <title><![CDATA[Category: linux | Andhi Noerdianto Personal Website]]></title>
   <link href="http://cahkaibon.github.io/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://cahkaibon.github.io/"/>
-  <updated>2014-02-03T15:59:15+07:00</updated>
+  <updated>2014-02-03T16:24:25+07:00</updated>
   <id>http://cahkaibon.github.io/</id>
   <author>
     <name><![CDATA[Andhi Noerdianto]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[linux command: list all users in the system]]></title>
+    <link href="http://cahkaibon.github.io/linux-command-list-all-users-in-the-system/"/>
+    <updated>2014-02-03T16:20:00+07:00</updated>
+    <id>http://cahkaibon.github.io/linux-command-list-all-users-in-the-system</id>
+    <content type="html"><![CDATA[<p>```
+$ cat /etc/passwd</p>
+
+<p>to list only username type the following awk command:
+$ awk -F':' '{ print $1}' /etc/passwd
+```</p>
+
+<p>Regards<br/>
+{cahkaibon}</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[install varnish as a reverse proxy for apache in centos 6]]></title>

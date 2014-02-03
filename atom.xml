@@ -4,7 +4,7 @@
   <title><![CDATA[Andhi Noerdianto Personal Website]]></title>
   <link href="http://cahkaibon.github.io/atom.xml" rel="self"/>
   <link href="http://cahkaibon.github.io/"/>
-  <updated>2014-02-03T15:59:15+07:00</updated>
+  <updated>2014-02-03T16:24:25+07:00</updated>
   <id>http://cahkaibon.github.io/</id>
   <author>
     <name><![CDATA[Andhi Noerdianto]]></name>
@@ -12,6 +12,26 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[linux command: list all users in the system]]></title>
+    <link href="http://cahkaibon.github.io/linux-command-list-all-users-in-the-system/"/>
+    <updated>2014-02-03T16:20:00+07:00</updated>
+    <id>http://cahkaibon.github.io/linux-command-list-all-users-in-the-system</id>
+    <content type="html"><![CDATA[<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ cat /etc/passwd
+</span><span class='line'>
+</span><span class='line'>to list only username type the following awk command:
+</span><span class='line'>$ awk -F':' '{ print $1}' /etc/passwd</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Regards<br/>
+{cahkaibon}</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[function helper: get column excel with PHP]]></title>
