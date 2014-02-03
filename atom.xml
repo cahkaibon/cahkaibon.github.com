@@ -4,7 +4,7 @@
   <title><![CDATA[Andhi Noerdianto Personal Website]]></title>
   <link href="http://cahkaibon.github.com/atom.xml" rel="self"/>
   <link href="http://cahkaibon.github.com/"/>
-  <updated>2014-02-03T10:56:22+07:00</updated>
+  <updated>2014-02-03T11:24:10+07:00</updated>
   <id>http://cahkaibon.github.com/</id>
   <author>
     <name><![CDATA[Andhi Noerdianto]]></name>
@@ -18,7 +18,16 @@
     <link href="http://cahkaibon.github.com/install-varnish-as-reverse-proxy-for-apache-in-centos-6/"/>
     <updated>2014-02-03T10:43:00+07:00</updated>
     <id>http://cahkaibon.github.com/install-varnish-as-reverse-proxy-for-apache-in-centos-6</id>
-    <content type="html"><![CDATA[<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+    <content type="html"><![CDATA[<p>intro:<br/></p>
+
+<object width="300" height="251" data="https://www.youtube.com/v/x7t2Sp174eI&fs=1" type="application/x-shockwave-flash">
+<param value="https://www.youtube.com/v/x7t2Sp174eI&fs=1" name="movie">
+<param value="transparent" name="wmode">
+<param value="true" name="allowFullScreen">
+</object>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>$ su -
