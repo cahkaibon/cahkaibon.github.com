@@ -14,4 +14,5 @@ creating variable on the fly with php:
 $str = 'testing';
 $$str = 'on the fly';
 echo $testing;
+?>
 ```
