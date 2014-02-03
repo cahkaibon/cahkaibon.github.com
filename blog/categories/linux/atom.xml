@@ -4,7 +4,7 @@
   <title><![CDATA[Category: linux | Andhi Noerdianto Personal Website]]></title>
   <link href="http://cahkaibon.github.io/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://cahkaibon.github.io/"/>
-  <updated>2014-02-03T16:24:25+07:00</updated>
+  <updated>2014-02-03T16:36:37+07:00</updated>
   <id>http://cahkaibon.github.io/</id>
   <author>
     <name><![CDATA[Andhi Noerdianto]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[linux command: remove/delete a directory]]></title>
+    <link href="http://cahkaibon.github.io/linux-command-remove-slash-delete-a-directory/"/>
+    <updated>2014-02-03T16:29:00+07:00</updated>
+    <id>http://cahkaibon.github.io/linux-command-remove-slash-delete-a-directory</id>
+    <content type="html"><![CDATA[<p>```
+$ rmdir /path/to/dir</p>
+
+<p>To remove all directories and subdirectories (recursive) use rm command:
+$ rm -rf /path/to/dir
+```</p>
+
+<p>Regards<br/>
+{cahkaibon}</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[linux command: list all users in the system]]></title>

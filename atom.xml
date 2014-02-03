@@ -4,7 +4,7 @@
   <title><![CDATA[Andhi Noerdianto Personal Website]]></title>
   <link href="http://cahkaibon.github.io/atom.xml" rel="self"/>
   <link href="http://cahkaibon.github.io/"/>
-  <updated>2014-02-03T16:24:25+07:00</updated>
+  <updated>2014-02-03T16:36:37+07:00</updated>
   <id>http://cahkaibon.github.io/</id>
   <author>
     <name><![CDATA[Andhi Noerdianto]]></name>
@@ -12,6 +12,26 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[linux command: remove/delete a directory]]></title>
+    <link href="http://cahkaibon.github.io/linux-command-remove-slash-delete-a-directory/"/>
+    <updated>2014-02-03T16:29:00+07:00</updated>
+    <id>http://cahkaibon.github.io/linux-command-remove-slash-delete-a-directory</id>
+    <content type="html"><![CDATA[<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ rmdir /path/to/dir
+</span><span class='line'>
+</span><span class='line'>To remove all directories and subdirectories (recursive) use rm command:
+</span><span class='line'>$ rm -rf /path/to/dir</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Regards<br/>
+{cahkaibon}</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[linux command: list all users in the system]]></title>
