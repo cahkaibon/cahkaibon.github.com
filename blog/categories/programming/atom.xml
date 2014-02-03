@@ -4,7 +4,7 @@
   <title><![CDATA[Category: programming | Andhi Noerdianto Personal Website]]></title>
   <link href="http://cahkaibon.github.com/blog/categories/programming/atom.xml" rel="self"/>
   <link href="http://cahkaibon.github.com/"/>
-  <updated>2014-02-03T13:35:46+07:00</updated>
+  <updated>2014-02-03T14:06:47+07:00</updated>
   <id>http://cahkaibon.github.com/</id>
   <author>
     <name><![CDATA[Andhi Noerdianto]]></name>
@@ -14,11 +14,51 @@
 
   
   <entry>
-    <title type="html"><![CDATA[variable on the fly in php]]></title>
+    <title type="html"><![CDATA[function helper: get column excel with php]]></title>
+    <link href="http://cahkaibon.github.com/function-helper-get-column-excel-with-php/"/>
+    <updated>2014-02-03T13:59:00+07:00</updated>
+    <id>http://cahkaibon.github.com/function-helper-get-column-excel-with-php</id>
+    <content type="html"><![CDATA[<p>```php
+&lt;?php
+/<em>
+ * @param integer $col
+ * return string
+ </em>/
+function get_column($col)
+{</p>
+
+<pre><code>$columns = array(
+        1=&gt;'A',2=&gt;'B',3=&gt;'C',4=&gt;'D',5=&gt;'E',6=&gt;'F',7=&gt;'G',8=&gt;'H',
+        9=&gt;'I',10=&gt;'J',11=&gt;'K',12=&gt;'L',13=&gt;'M',14=&gt;'N',15=&gt;'O',16=&gt;'P',
+        17=&gt;'Q',18=&gt;'R',19=&gt;'S',20=&gt;'T',21=&gt;'U',22=&gt;'V',23=&gt;'W',24=&gt;'X',
+        25=&gt;'Y',26=&gt;'Z'
+);
+
+$a = floor($col/26);
+$b = $col%26;
+if(($a &lt; 1) or ($a == 1 and $b == 0)) return $columns[$col];
+if($b == 0) return $columns[$a-1] . 'Z';
+$c = $columns[$a] . $columns[$b];
+
+return $c;
+</code></pre>
+
+<p>}</p>
+
+<h1>example</h1>
+
+<p>echo get_column(30);
+?>
+```</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[variable on the fly in PHP]]></title>
     <link href="http://cahkaibon.github.com/variable-on-the-fly-in-php/"/>
     <updated>2014-02-03T13:26:00+07:00</updated>
     <id>http://cahkaibon.github.com/variable-on-the-fly-in-php</id>
-    <content type="html"><![CDATA[<p>creating variable on the fly with php:
+    <content type="html"><![CDATA[<p>creating variable on the fly with PHP:
 <code>php
 &lt;?php
 $str = 'testing';
