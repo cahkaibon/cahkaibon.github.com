@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Andhi Noerdianto Personal Website]]></title>
-  <link href="http://cahkaibon.github.com/atom.xml" rel="self"/>
-  <link href="http://cahkaibon.github.com/"/>
-  <updated>2014-02-03T14:20:26+07:00</updated>
-  <id>http://cahkaibon.github.com/</id>
+  <link href="http://cahkaibon.github.io/atom.xml" rel="self"/>
+  <link href="http://cahkaibon.github.io/"/>
+  <updated>2014-02-03T15:59:15+07:00</updated>
+  <id>http://cahkaibon.github.io/</id>
   <author>
     <name><![CDATA[Andhi Noerdianto]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[function helper: get column excel with PHP]]></title>
-    <link href="http://cahkaibon.github.com/function-helper-get-column-excel-with-php/"/>
+    <link href="http://cahkaibon.github.io/function-helper-get-column-excel-with-php/"/>
     <updated>2014-02-03T13:59:00+07:00</updated>
-    <id>http://cahkaibon.github.com/function-helper-get-column-excel-with-php</id>
+    <id>http://cahkaibon.github.io/function-helper-get-column-excel-with-php</id>
     <content type="html"><![CDATA[<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -80,9 +80,9 @@
   
   <entry>
     <title type="html"><![CDATA[variable on the fly in PHP]]></title>
-    <link href="http://cahkaibon.github.com/variable-on-the-fly-in-php/"/>
+    <link href="http://cahkaibon.github.io/variable-on-the-fly-in-php/"/>
     <updated>2014-02-03T13:26:00+07:00</updated>
-    <id>http://cahkaibon.github.com/variable-on-the-fly-in-php</id>
+    <id>http://cahkaibon.github.io/variable-on-the-fly-in-php</id>
     <content type="html"><![CDATA[<p>creating variable on the fly with PHP:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -105,9 +105,9 @@
   
   <entry>
     <title type="html"><![CDATA[install varnish as a reverse proxy for apache in centos 6]]></title>
-    <link href="http://cahkaibon.github.com/install-varnish-as-reverse-proxy-for-apache-in-centos-6/"/>
+    <link href="http://cahkaibon.github.io/install-varnish-as-reverse-proxy-for-apache-in-centos-6/"/>
     <updated>2014-02-03T10:43:00+07:00</updated>
-    <id>http://cahkaibon.github.com/install-varnish-as-reverse-proxy-for-apache-in-centos-6</id>
+    <id>http://cahkaibon.github.io/install-varnish-as-reverse-proxy-for-apache-in-centos-6</id>
     <content type="html"><![CDATA[<p>intro:<br/></p>
 
 <object width="300" height="251" data="https://www.youtube.com/v/x7t2Sp174eI&fs=1" type="application/x-shockwave-flash">
@@ -199,9 +199,9 @@
   
   <entry>
     <title type="html"><![CDATA[blogging with octopress]]></title>
-    <link href="http://cahkaibon.github.com/blogging-with-octopress/"/>
+    <link href="http://cahkaibon.github.io/blogging-with-octopress/"/>
     <updated>2014-01-30T09:56:00+07:00</updated>
-    <id>http://cahkaibon.github.com/blogging-with-octopress</id>
+    <id>http://cahkaibon.github.io/blogging-with-octopress</id>
     <content type="html"><![CDATA[<p><strong>How To &#8216;ngeblog&#8217;</strong></p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -240,9 +240,9 @@ Only for my machine.</p></blockquote>
   
   <entry>
     <title type="html"><![CDATA[hello world]]></title>
-    <link href="http://cahkaibon.github.com/hello-world/"/>
+    <link href="http://cahkaibon.github.io/hello-world/"/>
     <updated>2013-03-06T22:29:00+07:00</updated>
-    <id>http://cahkaibon.github.com/hello-world</id>
+    <id>http://cahkaibon.github.io/hello-world</id>
     <content type="html"><![CDATA[<p><strong>Kenalan dulu sama <code>octopress</code> dan markdown</strong></p>
 
 <p>test lagi <br /> ini ganti baris</p>

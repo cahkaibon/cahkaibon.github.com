@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: other | Andhi Noerdianto Personal Website]]></title>
-  <link href="http://cahkaibon.github.com/blog/categories/other/atom.xml" rel="self"/>
-  <link href="http://cahkaibon.github.com/"/>
-  <updated>2014-02-03T14:20:26+07:00</updated>
-  <id>http://cahkaibon.github.com/</id>
+  <link href="http://cahkaibon.github.io/blog/categories/other/atom.xml" rel="self"/>
+  <link href="http://cahkaibon.github.io/"/>
+  <updated>2014-02-03T15:59:15+07:00</updated>
+  <id>http://cahkaibon.github.io/</id>
   <author>
     <name><![CDATA[Andhi Noerdianto]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[blogging with octopress]]></title>
-    <link href="http://cahkaibon.github.com/blogging-with-octopress/"/>
+    <link href="http://cahkaibon.github.io/blogging-with-octopress/"/>
     <updated>2014-01-30T09:56:00+07:00</updated>
-    <id>http://cahkaibon.github.com/blogging-with-octopress</id>
+    <id>http://cahkaibon.github.io/blogging-with-octopress</id>
     <content type="html"><![CDATA[<p><strong>How To 'ngeblog'</strong>
 <code>
 $ su blog
@@ -44,9 +44,9 @@ Only for my machine.</p></blockquote>
   
   <entry>
     <title type="html"><![CDATA[hello world]]></title>
-    <link href="http://cahkaibon.github.com/hello-world/"/>
+    <link href="http://cahkaibon.github.io/hello-world/"/>
     <updated>2013-03-06T22:29:00+07:00</updated>
-    <id>http://cahkaibon.github.com/hello-world</id>
+    <id>http://cahkaibon.github.io/hello-world</id>
     <content type="html"><![CDATA[<p><strong>Kenalan dulu sama <code>octopress</code> dan markdown</strong></p>
 
 <p>test lagi <br /> ini ganti baris</p>
