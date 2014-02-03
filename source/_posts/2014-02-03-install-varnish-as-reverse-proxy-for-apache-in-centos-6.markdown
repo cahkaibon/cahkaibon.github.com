@@ -8,6 +8,12 @@ keywords: varnish,reverse proxy
 tags: [varnish]
 author: Andhi Noerdianto 
 ---
+intro:<br/>
+<object width="300" height="251" data="https://www.youtube.com/v/x7t2Sp174eI&fs=1" type="application/x-shockwave-flash">
+<param value="https://www.youtube.com/v/x7t2Sp174eI&fs=1" name="movie">
+<param value="transparent" name="wmode">
+<param value="true" name="allowFullScreen">
+</object>
 ```
 $ su -
 $ rpm --nosignature -i http://repo.varnish-cache.org/redhat/varnish-3.0/el6/noarch/varnish-release/varnish-release-3.0-1.el6.noarch.rpm
