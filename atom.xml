@@ -4,7 +4,7 @@
   <title><![CDATA[Andhi Noerdianto Personal Website]]></title>
   <link href="http://cahkaibon.github.com/atom.xml" rel="self"/>
   <link href="http://cahkaibon.github.com/"/>
-  <updated>2014-02-03T11:24:10+07:00</updated>
+  <updated>2014-02-03T11:31:13+07:00</updated>
   <id>http://cahkaibon.github.com/</id>
   <author>
     <name><![CDATA[Andhi Noerdianto]]></name>
@@ -33,6 +33,9 @@
 </pre></td><td class='code'><pre><code class=''><span class='line'>$ su -
 </span><span class='line'>$ rpm --nosignature -i http://repo.varnish-cache.org/redhat/varnish-3.0/el6/noarch/varnish-release/varnish-release-3.0-1.el6.noarch.rpm
 </span><span class='line'>$ yum -y install varnish</span></code></pre></td></tr></table></div></figure>
+
+
+<!-- more -->
 
 
 <p>case:<br/></p>

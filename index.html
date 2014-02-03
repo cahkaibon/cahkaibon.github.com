@@ -154,72 +154,9 @@ $ rpm --nosignature -i http://repo.varnish-cache. &hellip;">
 </span><span class='line'>$ yum -y install varnish</span></code></pre></td></tr></table></div></figure>
 
 
-<p>case:<br/></p>
-
-<ul>
-<li>varnish in port 80</li>
-<li>apache in port 8080</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ vi /etc/varnish/default.vcl
-</span><span class='line'>change:
-</span><span class='line'>  backend default {
-</span><span class='line'>      .host = "127.0.0.1";
-</span><span class='line'>      .port = "80";
-</span><span class='line'>  }
-</span><span class='line'>to:
-</span><span class='line'>  backend default {
-</span><span class='line'>                .host = "127.0.0.1";
-</span><span class='line'>                .port = "8080";
-</span><span class='line'>        }
-</span><span class='line'>
-</span><span class='line'>$ vi /etc/sysconfig/varnish
-</span><span class='line'>change:
-</span><span class='line'>  VARNISH_LISTEN_PORT=6081
-</span><span class='line'>to: 
-</span><span class='line'>  VARNISH_LISTEN_PORT=80
-</span><span class='line'>
-</span><span class='line'>$ vi /etc/httpd/conf/httpd.conf
-</span><span class='line'>change:
-</span><span class='line'>  LISTEN 80
-</span><span class='line'>to:
-</span><span class='line'>  LISTEN 8080
-</span><span class='line'>
-</span><span class='line'>$ service httpd restart
-</span><span class='line'>$ service varnish start
-</span><span class='line'>$ chkconfig varnish on</span></code></pre></td></tr></table></div></figure>
-
 
 		
-		
+		<a href="/install-varnish-as-reverse-proxy-for-apache-in-centos-6/" class="more-link">Read on &rarr;</a>
 	</div>
 
 	
