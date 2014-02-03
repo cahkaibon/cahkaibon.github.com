@@ -4,7 +4,7 @@
   <title><![CDATA[Category: programming | Andhi Noerdianto Personal Website]]></title>
   <link href="http://cahkaibon.github.com/blog/categories/programming/atom.xml" rel="self"/>
   <link href="http://cahkaibon.github.com/"/>
-  <updated>2014-02-03T11:54:46+07:00</updated>
+  <updated>2014-02-03T13:33:26+07:00</updated>
   <id>http://cahkaibon.github.com/</id>
   <author>
     <name><![CDATA[Andhi Noerdianto]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[variable on the fly in php]]></title>
+    <link href="http://cahkaibon.github.com/variable-on-the-fly-in-php/"/>
+    <updated>2014-02-03T13:26:00+07:00</updated>
+    <id>http://cahkaibon.github.com/variable-on-the-fly-in-php</id>
+    <content type="html"><![CDATA[<p>creating variable on the fly with php:
+<code>php
+&lt;?php
+$str = 'testing';
+$$str = 'on the fly';
+echo $testing;
+</code></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[hello world]]></title>
