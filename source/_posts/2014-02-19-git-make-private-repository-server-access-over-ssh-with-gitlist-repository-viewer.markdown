@@ -75,3 +75,5 @@ $ git push origin master
 
 testing access from your browser for view list repositories: http://localhost/gitlist
 
+Regards<br/>
+{cahkaibon}
