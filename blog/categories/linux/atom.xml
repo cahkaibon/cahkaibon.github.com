@@ -4,7 +4,7 @@
   <title><![CDATA[Category: linux | Andhi Noerdianto Personal Website]]></title>
   <link href="http://cahkaibon.github.io/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://cahkaibon.github.io/"/>
-  <updated>2014-02-07T10:10:44+07:00</updated>
+  <updated>2014-02-19T16:29:23+07:00</updated>
   <id>http://cahkaibon.github.io/</id>
   <author>
     <name><![CDATA[Andhi Noerdianto]]></name>
@@ -12,6 +12,92 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[git: make private repository server access over ssh with gitlist repository viewer]]></title>
+    <link href="http://cahkaibon.github.io/git-make-private-repository-server-access-over-ssh-with-gitlist-repository-viewer/"/>
+    <updated>2014-02-19T16:27:00+07:00</updated>
+    <id>http://cahkaibon.github.io/git-make-private-repository-server-access-over-ssh-with-gitlist-repository-viewer</id>
+    <content type="html"><![CDATA[<p>Requirements:</p>
+
+<ul>
+<li>Apache</li>
+<li>PHP</li>
+<li>Git</li>
+<li>Gitlist</li>
+</ul>
+
+
+<p>Sample environment:</p>
+
+<ul>
+<li>Path repositories: /opt/repositories</li>
+<li>Path apache document root: /var/www/html</li>
+<li>Path to git executable: /usr/bin/git</li>
+<li>Apache root url: http://localhost</li>
+</ul>
+
+
+<!-- more -->
+
+
+<p>```</p>
+
+<h1>create user access ssh</h1>
+
+<p>$ useradd git
+$ passwd git</p>
+
+<h1>create path repositories</h1>
+
+<p>$ mkdir -p /opt/repositories
+$ chown git:git /opt/repositories</p>
+
+<h1>download gitlist</h1>
+
+<p>$ wget -c https://s3.amazonaws.com/gitlist/gitlist-0.4.0.tar.gz
+$ tar -xzvf gitlist-0.4.0.tar.gz
+$ mv gitlist /var/www/html/gitlist
+$ restorecon -r /var/www/html/gitlist
+```</p>
+
+<p>setup gitlist:
+```
+$ cd /var/www/html/gitlist
+$ mv config.ini-example config.ini
+$ mkdir cache
+$ chmod 777 cache
+$ vi config.ini</p>
+
+<h1>change according your environment</h1>
+
+<p>client = '/usr/bin/git' ; Your git executable path
+default_branch = 'master' ; Default branch when HEAD is detached
+repositories[] = '/opt/repositories/'
+```</p>
+
+<p>create repository:
+<code>
+$ su git
+$ cd /opt/repositories
+$ mkdir testing.git
+$ cd testing.git
+$ git --bare init
+$ exit
+</code></p>
+
+<p>testing access git from client:
+<code>
+$ git clone ssh://git@your-server-ip-or-domain/opt/repositories/testing.git
+$ touch readme
+$ git add .
+$ git commit -m 'first commit' .
+$ git push origin master
+</code></p>
+
+<p>testing access from your browser for view list repositories: http://localhost/gitlist</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[linux command: remove/delete a directory]]></title>

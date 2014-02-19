@@ -4,7 +4,7 @@
   <title><![CDATA[Andhi Noerdianto Personal Website]]></title>
   <link href="http://cahkaibon.github.io/atom.xml" rel="self"/>
   <link href="http://cahkaibon.github.io/"/>
-  <updated>2014-02-07T10:10:44+07:00</updated>
+  <updated>2014-02-19T16:29:23+07:00</updated>
   <id>http://cahkaibon.github.io/</id>
   <author>
     <name><![CDATA[Andhi Noerdianto]]></name>
@@ -12,6 +12,122 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[git: make private repository server access over ssh with gitlist repository viewer]]></title>
+    <link href="http://cahkaibon.github.io/git-make-private-repository-server-access-over-ssh-with-gitlist-repository-viewer/"/>
+    <updated>2014-02-19T16:27:00+07:00</updated>
+    <id>http://cahkaibon.github.io/git-make-private-repository-server-access-over-ssh-with-gitlist-repository-viewer</id>
+    <content type="html"><![CDATA[<p>Requirements:</p>
+
+<ul>
+<li>Apache</li>
+<li>PHP</li>
+<li>Git</li>
+<li>Gitlist</li>
+</ul>
+
+
+<p>Sample environment:</p>
+
+<ul>
+<li>Path repositories: /opt/repositories</li>
+<li>Path apache document root: /var/www/html</li>
+<li>Path to git executable: /usr/bin/git</li>
+<li>Apache root url: http://localhost</li>
+</ul>
+
+
+<!-- more -->
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'># create user access ssh
+</span><span class='line'>$ useradd git
+</span><span class='line'>$ passwd git
+</span><span class='line'>
+</span><span class='line'># create path repositories
+</span><span class='line'>$ mkdir -p /opt/repositories
+</span><span class='line'>$ chown git:git /opt/repositories
+</span><span class='line'>
+</span><span class='line'># download gitlist
+</span><span class='line'>$ wget -c https://s3.amazonaws.com/gitlist/gitlist-0.4.0.tar.gz
+</span><span class='line'>$ tar -xzvf gitlist-0.4.0.tar.gz
+</span><span class='line'>$ mv gitlist /var/www/html/gitlist
+</span><span class='line'>$ restorecon -r /var/www/html/gitlist</span></code></pre></td></tr></table></div></figure>
+
+
+<p>setup gitlist:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ cd /var/www/html/gitlist
+</span><span class='line'>$ mv config.ini-example config.ini
+</span><span class='line'>$ mkdir cache
+</span><span class='line'>$ chmod 777 cache
+</span><span class='line'>$ vi config.ini
+</span><span class='line'>
+</span><span class='line'># change according your environment
+</span><span class='line'>client = '/usr/bin/git' ; Your git executable path
+</span><span class='line'>default_branch = 'master' ; Default branch when HEAD is detached
+</span><span class='line'>repositories[] = '/opt/repositories/'</span></code></pre></td></tr></table></div></figure>
+
+
+<p>create repository:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ su git
+</span><span class='line'>$ cd /opt/repositories
+</span><span class='line'>$ mkdir testing.git
+</span><span class='line'>$ cd testing.git
+</span><span class='line'>$ git --bare init
+</span><span class='line'>$ exit</span></code></pre></td></tr></table></div></figure>
+
+
+<p>testing access git from client:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ git clone ssh://git@your-server-ip-or-domain/opt/repositories/testing.git
+</span><span class='line'>$ touch readme
+</span><span class='line'>$ git add .
+</span><span class='line'>$ git commit -m 'first commit' .
+</span><span class='line'>$ git push origin master</span></code></pre></td></tr></table></div></figure>
+
+
+<p>testing access from your browser for view list repositories: http://localhost/gitlist</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[linux command: remove/delete a directory]]></title>

@@ -1,0 +1,334 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>git: make private repository server access over ssh with gitlist repository viewer - Andhi Noerdianto Personal Website</title>
+	<meta name="author" content="Andhi Noerdianto">
+
+	
+	<meta name="description" content="Feb 19th, 2014 linux Git: Make Private Repository Server Access Over Ssh With Gitlist Repository Viewer Requirements: Apache
+PHP
+Git
+Gitlist Sample &hellip;">
+	<meta name="keywords" content="git">
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="Andhi Noerdianto Personal Website" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://cahkaibon.github.io/git-make-private-repository-server-access-over-ssh-with-gitlist-repository-viewer/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">	
+	<a href="/"><img src="/images/logo-cahkaibon-github-io.png" alt="Andhi Noerdianto cahkaibon.github.io" width="98%"/></a>
+</div>
+<!--
+<h1><a href="/">Andhi Noerdianto</a></h1>
+<p class="subtitle">Trying.Running.Blogging</p>-->
+<form method="get" action="http://google.com/search">
+    <input type="hidden" value="site:cahkaibon.github.io" name="q">
+    <input type="text" placeholder="Search" results="0" name="q" class="search">
+</form>
+<nav id="main-nav"><ul class="main-navigation">
+<li><a href="/">Home</a></li>
+<li><a href="/about/">About Me</a></li>
+<li><a href="/portofolio/">Portofolio</a></li>
+<li><a href="/blog/categories/linux/">Linux</a></li>
+<li><a href="/blog/categories/programming/">Programming</a></li>
+<li><a href="/blog/categories/mobile/">Mobile</a></li>
+<li><a href="/blog/categories/database/">Database</a></li>
+<!--li><a href="/blog/categories/design/">Design</a></li-->
+<li><a href="/blog/categories/other/">Other</a></li>
+<li><a href="/blog/archives">Archives</a></li>
+</ul>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+		
+		
+		<a class="google" href="https://plus.google.com/102574814819827210484?rel=author" title="Google+">Google+</a>
+		
+		
+		<a class="twitter" href="http://twitter.com/cahkaibon" title="Twitter">Twitter</a>
+		
+		
+		<a class="github" href="https://github.com/cahkaibon" title="GitHub">GitHub</a>
+		
+		
+		<a class="linkedin" href="http://www.linkedin.com/in/andhinoerdianto">LinkedIn</a>
+		
+		
+		
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+<h4>{Ikatlah.Ilmu.Dengan.Menulis}</h4>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+<div id="banner" class="inner">
+	<div class="container">
+		<ul class="feed"></ul>
+	</div>
+	<small><a href="http://twitter.com/cahkaibon">cahkaibon</a> @ <a href="http://twitter.com">Twitter</a></small>
+	<div class="loading">Loading...</div>
+</div>
+<script src="/javascripts/twitter.js"></script>
+<script type="text/javascript">
+	(function($){
+		$('#banner').getTwitterFeed('cahkaibon', 5, false);
+	})(jQuery);
+</script>
+
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-02-19T16:27:00+07:00" data-updated="true" itemprop="datePublished">Feb 19<span>th</span>, 2014</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/blog/categories/linux/'>linux</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name" style="color:#00CBFF;">Git: Make Private Repository Server Access Over Ssh With Gitlist Repository Viewer</h1>
+	<div class="entry-content" itemprop="articleBody"><p>Requirements:</p>
+
+<ul>
+<li>Apache</li>
+<li>PHP</li>
+<li>Git</li>
+<li>Gitlist</li>
+</ul>
+
+
+<p>Sample environment:</p>
+
+<ul>
+<li>Path repositories: /opt/repositories</li>
+<li>Path apache document root: /var/www/html</li>
+<li>Path to git executable: /usr/bin/git</li>
+<li>Apache root url: http://localhost</li>
+</ul>
+
+
+<!-- more -->
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'># create user access ssh
+</span><span class='line'>$ useradd git
+</span><span class='line'>$ passwd git
+</span><span class='line'>
+</span><span class='line'># create path repositories
+</span><span class='line'>$ mkdir -p /opt/repositories
+</span><span class='line'>$ chown git:git /opt/repositories
+</span><span class='line'>
+</span><span class='line'># download gitlist
+</span><span class='line'>$ wget -c https://s3.amazonaws.com/gitlist/gitlist-0.4.0.tar.gz
+</span><span class='line'>$ tar -xzvf gitlist-0.4.0.tar.gz
+</span><span class='line'>$ mv gitlist /var/www/html/gitlist
+</span><span class='line'>$ restorecon -r /var/www/html/gitlist</span></code></pre></td></tr></table></div></figure>
+
+
+<p>setup gitlist:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ cd /var/www/html/gitlist
+</span><span class='line'>$ mv config.ini-example config.ini
+</span><span class='line'>$ mkdir cache
+</span><span class='line'>$ chmod 777 cache
+</span><span class='line'>$ vi config.ini
+</span><span class='line'>
+</span><span class='line'># change according your environment
+</span><span class='line'>client = '/usr/bin/git' ; Your git executable path
+</span><span class='line'>default_branch = 'master' ; Default branch when HEAD is detached
+</span><span class='line'>repositories[] = '/opt/repositories/'</span></code></pre></td></tr></table></div></figure>
+
+
+<p>create repository:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ su git
+</span><span class='line'>$ cd /opt/repositories
+</span><span class='line'>$ mkdir testing.git
+</span><span class='line'>$ cd testing.git
+</span><span class='line'>$ git --bare init
+</span><span class='line'>$ exit</span></code></pre></td></tr></table></div></figure>
+
+
+<p>testing access git from client:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ git clone ssh://git@your-server-ip-or-domain/opt/repositories/testing.git
+</span><span class='line'>$ touch readme
+</span><span class='line'>$ git add .
+</span><span class='line'>$ git commit -m 'first commit' .
+</span><span class='line'>$ git push origin master</span></code></pre></td></tr></table></div></figure>
+
+
+<p>testing access from your browser for view list repositories: http://localhost/gitlist</p>
+</div>
+	<div style="padding-top:20px;">
+  
+
+<span class="byline author vcard">Posted by <a href="https://plus.google.com/102574814819827210484?rel=author">Andhi Noerdianto</a></span> •  Tags: 
+
+	<a href="/tags/git">git</a>
+	
+	
+
+</div>
+
+	
+</article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+
+<section id="comment">
+    <h1 class="title">Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</section>
+
+</div>
+			</div>
+			<footer id="footer" class="inner">Copyright &copy; 2014 - <a href="/">Andhi Noerdianto</a> - 
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+			<script src="/javascripts/slash.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
+
+<script type="text/javascript">
+      var disqus_shortname = 'cahkaibon';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://cahkaibon.github.io/git-make-private-repository-server-access-over-ssh-with-gitlist-repository-viewer/';
+        var disqus_url = 'http://cahkaibon.github.io/git-make-private-repository-server-access-over-ssh-with-gitlist-repository-viewer/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<script>
+  
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new 
+Date();a=s.createElement(o),
+  
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js
+','ga');
+
+  ga('create', 'UA-47864119-1', 'cahkaibon.github.io');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+
+		</div>
+	</div>
+</body>
+</html>
