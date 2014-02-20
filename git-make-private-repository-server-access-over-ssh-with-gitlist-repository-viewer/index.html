@@ -10,7 +10,8 @@
 	<meta name="description" content="Feb 19th, 2014 linux Git: Make Private Repository Server Access Over Ssh With Gitlist Repository Viewer Requirements: Apache
 PHP
 Git
-Gitlist Sample &hellip;">
+Gitlist
+SSH &hellip;">
 	<meta name="keywords" content="git">
 
   <!-- http://t.co/dKP3o1e -->
@@ -138,6 +139,7 @@ Gitlist Sample &hellip;">
 <li>PHP</li>
 <li>Git</li>
 <li>Gitlist</li>
+<li>SSH</li>
 </ul>
 
 
@@ -169,7 +171,15 @@ Gitlist Sample &hellip;">
 <span class='line-number'>11</span>
 <span class='line-number'>12</span>
 <span class='line-number'>13</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'># create user access ssh
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'># login as root
+</span><span class='line'>$ su -
+</span><span class='line'>
+</span><span class='line'># create user access ssh
 </span><span class='line'>$ useradd git
 </span><span class='line'>$ passwd git
 </span><span class='line'>
@@ -181,6 +191,8 @@ Gitlist Sample &hellip;">
 </span><span class='line'>$ wget -c https://s3.amazonaws.com/gitlist/gitlist-0.4.0.tar.gz
 </span><span class='line'>$ tar -xzvf gitlist-0.4.0.tar.gz
 </span><span class='line'>$ mv gitlist /var/www/html/gitlist
+</span><span class='line'>
+</span><span class='line'># if found error 403 when access from browser
 </span><span class='line'>$ restorecon -r /var/www/html/gitlist</span></code></pre></td></tr></table></div></figure>
 
 
