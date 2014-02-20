@@ -4,7 +4,7 @@
   <title><![CDATA[Andhi Noerdianto Personal Website]]></title>
   <link href="http://cahkaibon.github.io/atom.xml" rel="self"/>
   <link href="http://cahkaibon.github.io/"/>
-  <updated>2014-02-20T13:44:15+07:00</updated>
+  <updated>2014-02-20T14:26:25+07:00</updated>
   <id>http://cahkaibon.github.io/</id>
   <author>
     <name><![CDATA[Andhi Noerdianto]]></name>
@@ -31,7 +31,7 @@
 </span><span class='line'>$ git remote add origin [new_url_repository]
 </span><span class='line'>$ git config master.remote origin
 </span><span class='line'>$ git config master.merge refs/heads/master
-</span><span class='line'>$ git push</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>$ git push origin master</span></code></pre></td></tr></table></div></figure>
 
 
 <p>Regards<br/>
