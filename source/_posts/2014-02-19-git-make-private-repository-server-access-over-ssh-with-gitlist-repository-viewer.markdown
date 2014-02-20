@@ -14,6 +14,7 @@ Requirements:
 - PHP
 - Git
 - Gitlist
+- SSH
 
 Sample environment:
 
@@ -25,6 +26,9 @@ Sample environment:
 <!-- more -->
 
 ```
+# login as root
+$ su -
+
 # create user access ssh
 $ useradd git
 $ passwd git
@@ -37,6 +41,8 @@ $ chown git:git /opt/repositories
 $ wget -c https://s3.amazonaws.com/gitlist/gitlist-0.4.0.tar.gz
 $ tar -xzvf gitlist-0.4.0.tar.gz
 $ mv gitlist /var/www/html/gitlist
+
+# if found error 403 when access from browser
 $ restorecon -r /var/www/html/gitlist
 ```
 
