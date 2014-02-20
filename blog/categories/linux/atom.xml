@@ -4,7 +4,7 @@
   <title><![CDATA[Category: linux | Andhi Noerdianto Personal Website]]></title>
   <link href="http://cahkaibon.github.io/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://cahkaibon.github.io/"/>
-  <updated>2014-02-20T11:19:38+07:00</updated>
+  <updated>2014-02-20T13:44:15+07:00</updated>
   <id>http://cahkaibon.github.io/</id>
   <author>
     <name><![CDATA[Andhi Noerdianto]]></name>
@@ -12,6 +12,28 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[git: change remote (origin) url repository]]></title>
+    <link href="http://cahkaibon.github.io/git-change-remote-origin-url-repository/"/>
+    <updated>2014-02-20T13:07:00+07:00</updated>
+    <id>http://cahkaibon.github.io/git-change-remote-origin-url-repository</id>
+    <content type="html"><![CDATA[<p>```</p>
+
+<h1>show remote url</h1>
+
+<p>$ git remote -v
+$ git remote rm origin
+$ git remote add origin [new_url_repository]
+$ git config master.remote origin
+$ git config master.merge refs/heads/master
+$ git push
+```</p>
+
+<p>Regards<br/>
+{cahkaibon}</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[git: make private repository server access over ssh with gitlist repository viewer]]></title>
@@ -222,67 +244,6 @@ $ chkconfig varnish on
 
 <p>Regards<br/>
 {cahkaibon}</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[hello world]]></title>
-    <link href="http://cahkaibon.github.io/hello-world/"/>
-    <updated>2013-03-06T22:29:00+07:00</updated>
-    <id>http://cahkaibon.github.io/hello-world</id>
-    <content type="html"><![CDATA[<p><strong>Kenalan dulu sama <code>octopress</code> dan markdown</strong></p>
-
-<p>test lagi <br /> ini ganti baris</p>
-
-<blockquote><p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p></blockquote>
-
-<!-- more -->
-
-
-<p><code>
-$ sudo make me a sandwich
-$ sudo make me a sandwich
-$ sudo make me a sandwich
-</code>
-``` php Testing Caption Code Snippet
-if($var === 1){</p>
-
-<pre><code>echo "TRUE";
-</code></pre>
-
-<p>}else{</p>
-
-<pre><code>echo "FALSE";
-</code></pre>
-
-<p>}
-```</p>
-
-<p>Kalau yg ini list order:</p>
-
-<ul>
-<li>satu</li>
-<li>dua</li>
-<li>tiga</li>
-</ul>
-
-
-<p>test</p>
-
-<ol>
-<li>siji</li>
-<li>loro</li>
-<li>telu</li>
-</ol>
-
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Javascript Array Syntax </span><a href='http://j.mp/pPUUmW'>MDN Documentation </a></figcaption> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">arr1</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">arrayLength</span><span class="p">);</span>
-</span><span class='line'><span class="kd">var</span> <span class="nx">arr2</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">element0</span><span class="p">,</span> <span class="nx">element1</span><span class="p">,</span> <span class="p">...,</span> <span class="nx">elementN</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Andhi Noerdianto Personal Website]]></title>
   <link href="http://cahkaibon.github.io/atom.xml" rel="self"/>
   <link href="http://cahkaibon.github.io/"/>
-  <updated>2014-02-20T11:19:38+07:00</updated>
+  <updated>2014-02-20T13:44:15+07:00</updated>
   <id>http://cahkaibon.github.io/</id>
   <author>
     <name><![CDATA[Andhi Noerdianto]]></name>
@@ -12,6 +12,32 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[git: change remote (origin) url repository]]></title>
+    <link href="http://cahkaibon.github.io/git-change-remote-origin-url-repository/"/>
+    <updated>2014-02-20T13:07:00+07:00</updated>
+    <id>http://cahkaibon.github.io/git-change-remote-origin-url-repository</id>
+    <content type="html"><![CDATA[<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'># show remote url
+</span><span class='line'>$ git remote -v
+</span><span class='line'>$ git remote rm origin
+</span><span class='line'>$ git remote add origin [new_url_repository]
+</span><span class='line'>$ git config master.remote origin
+</span><span class='line'>$ git config master.merge refs/heads/master
+</span><span class='line'>$ git push</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Regards<br/>
+{cahkaibon}</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[git: make private repository server access over ssh with gitlist repository viewer]]></title>

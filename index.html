@@ -7,11 +7,17 @@
 	<meta name="author" content="Andhi Noerdianto">
 
 	
-	<meta name="description" content="Feb 19th, 2014 linux Git: Make Private Repository Server Access Over Ssh With Gitlist Repository Viewer Requirements: Apache
-PHP
-Git
-Gitlist
-SSH &hellip;">
+	<meta name="description" content="Feb 20th, 2014 linux Git: Change Remote (Origin) Url Repository 1
+2
+3
+4
+5
+6
+7
+# show remote url
+$ git remote -v
+$ git remote rm origin
+$ git remote &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -109,6 +115,59 @@ SSH &hellip;">
 			<div class="mid-col-container">
 				<div id="content" class="inner">
 <div itemscope itemtype="http://schema.org/Blog">
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-02-20T13:07:00+07:00" data-updated="true" itemprop="datePublished">Feb 20<span>th</span>, 2014</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/blog/categories/linux/'>linux</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name" style="color:#00CBFF;"><a href="/git-change-remote-origin-url-repository/" itemprop="url">Git: Change Remote (Origin) Url Repository</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'># show remote url
+</span><span class='line'>$ git remote -v
+</span><span class='line'>$ git remote rm origin
+</span><span class='line'>$ git remote add origin [new_url_repository]
+</span><span class='line'>$ git config master.remote origin
+</span><span class='line'>$ git config master.merge refs/heads/master
+</span><span class='line'>$ git push</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Regards<br/>
+{cahkaibon}</p>
+
+		
+		
+	</div>
+
+	
+</article>
 
 
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
@@ -451,74 +510,6 @@ SSH &hellip;">
 
 		
 		<a href="/install-varnish-as-reverse-proxy-for-apache-in-centos-6/" class="more-link">Read more &rarr;</a>
-	</div>
-
-	
-</article>
-
-
-    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-01-30T09:56:00+07:00" data-updated="true" itemprop="datePublished">Jan 30<span>th</span>, 2014</time></div>
-		<div class="tags">
-
-
-	<a class='category' href='/blog/categories/other/'>other</a>
-
-
-</div>
-		
-	</div>
-	<h1 class="title" itemprop="name" style="color:#00CBFF;"><a href="/blogging-with-octopress/" itemprop="url">Blogging With Octopress</a></h1>
-	<div class="entry-content" itemprop="articleBody">
-		<p><strong>How To &#8216;ngeblog&#8217;</strong></p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ su blog
-</span><span class='line'>$ cd /home/blog/octopress/
-</span><span class='line'>$ /bin/bash --login
-</span><span class='line'>$ rake new_post["sample"]
-</span><span class='line'>$ vi source/_post/yyyy-mm-dd-sample.markdown
-</span><span class='line'>$ rake generate
-</span><span class='line'>$ rake watch
-</span><span class='line'>$ rake preview
-</span><span class='line'>$ rake deploy &lt;--- deploy ke github
-</span><span class='line'>$ git add .
-</span><span class='line'>$ git commit -m 'your message' .
-</span><span class='line'>$ git push origin source</span></code></pre></td></tr></table></div></figure>
-
-
-<blockquote><p><strong>Caution!!!</strong><br/>
-Only for my machine.</p></blockquote>
-
-<p>Regards<br />
-{cahkaibon}</p>
-
-		
-		
 	</div>
 
 	
